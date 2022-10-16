@@ -1,0 +1,28 @@
+setting -f
+setting -folder
+setting -labels
+setting -seed
+**************************************
+Network file:			network_file
+file with labels: label_file_copy
+gap: 1.4
+optimization parameter: 0.5
+singlets parameter: 0.5
+tp folder: results
+Random number generator seed:			1
+**************************************
+
+label file not found
+network:: 1000 nodes and 25100 stubs;	 average degree = 25.1
+pts found: 1
+results/tp	
+getting partition from file: results/tp level: 0
+############### position level: 0
+************************* Setting radii and positions: LEVEL 1 modules: 13
+############### position level: 1
+************************* Resetting positions LEVEL 1
+recording... 
+printing level:: 0 in FILE: network_file_cvis/cvis_1.gdf
+recording links... 
+printing level:: 1 in FILE: network_file_cvis/cvis_0.gdf
+recording links... 

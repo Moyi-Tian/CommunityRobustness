@@ -1,0 +1,35 @@
+running: /home/pmoriano/Documents/Research/Robustness/Code/clustering_programs/clustering_programs_5_2/bin//infomap_undir 1 infomap_net.net 10
+Reading network infomap_net.net...done! (found 1000 nodes and 12550 links)
+Now partition the network:
+Attempt 1/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 2/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 3/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 4/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 5/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 6/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 7/10
+Iteration 1, moving 1000 nodes, looping 6 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 8/10
+Iteration 1, moving 1000 nodes, looping 6 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 9/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Attempt 10/10
+Iteration 1, moving 1000 nodes, looping 5 1 times between mergings to code length 8.63819 in 13 modules.
+Iteration 2, moving 1000 nodes, looping 1 times between mergings to code length 8.63819 in 13 modules.
+Done! Code length 8.63819 in 13 modules.
+Compressed by 10.3885 percent.
