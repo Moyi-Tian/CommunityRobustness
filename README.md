@@ -25,13 +25,13 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 
 
 
-The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separate folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and files are generated automatically by the algorithm.
+The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network/` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separate folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and files are generated automatically by the algorithm.
 
 
 
 ### Datasets
 
-We provide 3 empirical network datasets in `./Empirical_Dataset` as examples to run empirical experiments. These data are pre-processed and cleaned from the following original datasets obtained from online data repositories:
+We provide 3 empirical network datasets in `./Empirical_Dataset/` as examples to run empirical experiments. These data are pre-processed and cleaned from the following original datasets obtained from online data repositories:
 
 1. R. Rossi and N. Ahmed, Ia-radoslaw-email, https://networkrepository.com/ia-radoslaw-email.php
 2. J. Kunegis, Enron, http://konect.cc/networks/enron
