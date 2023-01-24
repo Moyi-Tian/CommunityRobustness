@@ -17,7 +17,7 @@ conda activate robustness
 
 ## Reproducing Experiments
 
-Both the synthetic experiments using LFR benchmark graphs and the empirical experiments can be reproduced with
+Both the synthetic experiments using the Lancichinetti-Fortunato-Radicch (LFR) benchmark graphs and the empirical experiments can be reproduced with
 
 `python driver.py`
 
@@ -25,9 +25,13 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 
 
 
+The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separated folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and data files are generated automatically by the algorithm.
+
+
+
 ### Datasets
 
-The empirical network data provided in ./Empirical_Dataset folder are pre-processed and cleaned from the following original datasets obtained from online data repositories:
+We provide 3 empirical network datasets in `./Empirical_Dataset` as examples to run empirical experiments. These data are pre-processed and cleaned from the following original datasets obtained from online data repositories:
 
 1. R. Rossi and N. Ahmed, Ia-radoslaw-email, https://networkrepository.com/ia-radoslaw-email.php
 2. J. Kunegis, Enron, http://konect.cc/networks/enron
@@ -35,11 +39,15 @@ The empirical network data provided in ./Empirical_Dataset folder are pre-proces
 
 
 
+
+
 ### References
 
 Our code uses the following packages/algorithms developed by the others:
 
-#### LFR benchmark graph 
+
+
+#### * LFR benchmark graph 
 
 ```
 @article{PhysRevE.78.046110,
@@ -62,7 +70,7 @@ The package is provided on the author's webpage: https://www.santofortunato.net/
 
 
 
-#### Lancichinetti's program as a collection of clustering algorithms (specifically used Louvain, Infomap and Label Propagation)
+#### * Lancichinetti's program as a collection of clustering algorithms (specifically used Louvain, Infomap and Label Propagation)
 
 The program itself is an implementation of the paper "Directed, weighted and overlapping benchmark graphs for community detection algorithms", written by Andrea Lancichinetti and Santo Fortunato. 
 
@@ -70,7 +78,7 @@ The package is provided on Santo Fortunato's Webpage https://www.santofortunato.
 
 
 
-#### Leiden algorithm
+#### * Leiden algorithm
 
 ```
 @article{Traag_2019,
@@ -91,7 +99,7 @@ Leiden package GitHub page: https://github.com/CWTSLeiden/networkanalysis
 
 
 
-#### Fast Consensus
+#### * Fast Consensus
 
 ```
 @article{PhysRevE.99.042301,
