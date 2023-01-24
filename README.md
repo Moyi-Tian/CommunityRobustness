@@ -27,7 +27,7 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 
 > <u>Input instruction:</u>
 >
-> ​	For the inquiry `Generate synthetic network or use empirical network`: Type either `synthetic` or `empirical` to specify whether you want to run experiments on the LFR benchmark or using emprical dataset which you need to provide a path to at a later step.\
+> ​	For the inquiry `Generate synthetic network or use empirical network`: Type either `synthetic` or `empirical` to specify whether you want to run experiments on the LFR benchmark or using emprical dataset which you need to provide a path to at a later step.
 >
 > 
 >
@@ -43,7 +43,7 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 >
 > ​		`How to randomly select edges to append?`: This is to select the edge addition rule for perturbing the benchmark graph. All additional edges are selected from the set of non-existing edges and multi-edges are prohibited. Type `uniform` for uniformly at random selection, `inter` for restricting to the inter-community edges (i.e. edges across different initial communities), `intra` for restricting to intra-community edges (i.e. edges connected to nodes within the same initial community).
 >
-> ​		`Add up to how many times of original number of edges`: Provide a float or or hit `enter` to use the default value 10. The experiment will run up to when the specified times (X) of original number of edges are added over 50 steps. Specifically, it adds X/50, 2X/50, ..., X times of original number of edges at step 1, 2, ..., 50 respectively. The selections at different steps are independent from each other and only based on the initial graph. Also, for each number of edges added, we repeat 50 times of the selection independently.\
+> ​		`Add up to how many times of original number of edges`: Provide a float or or hit `enter` to use the default value 10. The experiment will run up to when the specified times (X) of original number of edges are added over 50 steps. Specifically, it adds X/50, 2X/50, ..., X times of original number of edges at step 1, 2, ..., 50 respectively. The selections at different steps are independent from each other and only based on the initial graph. Also, for each number of edges added, we repeat 50 times of the selection independently.
 >
 > 
 >
@@ -57,7 +57,7 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 >
 > ​		`Number of partitions for initial network?`: Type an integer or hit `enter` to use the default value 20. This is a parameter given to the fast consensus algorithm which is used to detect initial partitions.
 >
-> ​		`Number of realizations per time step?`: Type an integer or hit `enter` to use the default value 10. This is the number of times the clustering algorithm will rurn at each step independently.\
+> ​		`Number of realizations per time step?`: Type an integer or hit `enter` to use the default value 10. This is the number of times the clustering algorithm will rurn at each step independently.
 >
 > 
 
