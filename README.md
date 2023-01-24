@@ -25,7 +25,7 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 
 
 
-The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separated folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and data files are generated automatically by the algorithm.
+The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separate folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and files are generated automatically by the algorithm.
 
 
 
