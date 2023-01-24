@@ -56,11 +56,13 @@ def propose_edge(max_index):
 
 
 
-def add_random_edges(edges, times):
+def add_random_edges(edges, times, labels, flag):
     """
     Add random a certain time of random edges to an existing network
     @param: edges (set). Set of edge tuples
     @param: times (int). Number of new edges to be added
+    @param: labels (numpy array). Numpy array of the membership of nodes (membership labels from 1, node ids from 0)
+    @param: flag (int). Flag indicating how to select randomly appended edges (0=uniform at random; 1=across communities; 2=in same community)
     @return: new_edgelist (list). Edge list with random edges added
     """
     
@@ -75,8 +77,15 @@ def add_random_edges(edges, times):
         candidate_edge = propose_edge(max_index)
                 
         # To avoid repeated edges
-        while (candidate_edge[0], candidate_edge[1]) in edges_copy or (candidate_edge[1], candidate_edge[0]) in edges_copy:
-            candidate_edge = propose_edge(max_index)
+        if flag == 0:
+            while (candidate_edge[0], candidate_edge[1]) in edges_copy or (candidate_edge[1], candidate_edge[0]) in edges_copy:
+                candidate_edge = propose_edge(max_index)
+        elif flag == 1:
+            while (candidate_edge[0], candidate_edge[1]) in edges_copy or (candidate_edge[1], candidate_edge[0]) in edges_copy or labels[candidate_edge[0]] == labels[candidate_edge[1]]:
+                candidate_edge = propose_edge(max_index)
+        elif flag == 2:
+            while (candidate_edge[0], candidate_edge[1]) in edges_copy or (candidate_edge[1], candidate_edge[0]) in edges_copy or labels[candidate_edge[0]] != labels[candidate_edge[1]]:
+                candidate_edge = propose_edge(max_index)
     
         edges_copy.add(candidate_edge)
         edges_list.append(candidate_edge)
