@@ -49,7 +49,7 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 >
 > ​	* If **empirical**:
 >
-> ​		`Path to network data`: provide path to the empirical dataset to be used for the computational experiment. Only type the remaining part of the path following the current working directory displayed. To use a provided example, type like `Empirical_Dataset/ia-radoslaw-email_N74.txt`. [Note that our experiment requires the empirical network dataset to be pre-cleaned so that it satisfies: (1) There are 3 columns, named as `From`, `To` and `Time`, corresponding to the source node, the target node and the corresponding timestamp for the emerging edge. (2) The node IDs are consecutive integers starting from 0. (3) There also should be no repeated edges. (4)The rows are sorted by time.] 
+> ​		`Path to network data`: provide path to the empirical dataset to be used for the computational experiment. Only type the remaining part of the path following the current working directory displayed. To use a provided example, type like `Empirical_Dataset/ia-radoslaw-email_N74.txt`. [Note that our experiment requires the empirical network dataset to be pre-cleaned so that it satisfies: (1) There are 3 columns, named as `From`, `To` and `Time`, corresponding to the source node, the target node and the corresponding timestamp for the emerging edge. (2) The node IDs are consecutive integers starting from 0. (3) There are no repeated edges. (4)The rows are sorted by time.] 
 >
 > ​		`Community detection algorithm`: Type `louvain` for Louvain, or `leiden` for Leiden, or `infomap` for Infomap, or `lpm` for Label Propagation.
 >
