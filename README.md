@@ -81,7 +81,7 @@ The results are written into `json` data files. If running synthetic experiments
     * Standard deviation of modularity
     * Mean number of communities
     * Standard deviation of number of communities
-    * Mean community sizes, i.e. a list of numbers where each corresponds to the mean number of members in the community label index+1
+    * Mean community sizes, i.e. a list of numbers where each corresponds to the mean number of members in the community labeled index+1
     * Standard deviation of community sizes
     * Degree distribution of the initial network
   * At each step, data saved (in json file named with `results_...` in `./Data/empirical_network/(network_name+)_s_.../`) are:
