@@ -63,7 +63,41 @@ Then follow the popped up inquiries to provide user inputs correspondingly. Hit 
 
 
 
+### Results
+
 The results are written into `json` data files. If running synthetic experiments on LFR benchmark, the result files will be in `./Data/LFR_network/` and the file names will start with `results_`. When running on empirical datasets, information on the initial partition and computational results over timesteps are recorded in separate folders, which can be found in the directory `./Data/empirical_network/`. These corresonding directories and files are generated automatically by the algorithm.
+
+
+
+* For synthetic experiments, the following data are saved for each step (in json file named with `results_...` in `./Data/LFR_network/`):
+  * Percentage of number of edges added with respect to that of the initial network
+  * Mean Normalized Mutual Information (NMI)
+  * Standard deviation of NMIs
+  * Mean Element-Centric Clustering Similarity metric score
+  * Standard Deviation of Element-Centric Clustering Similarity metric scores
+* For empirical experiments, saved data are:
+  * Stats saved for the intial partition (in file `initial_network+partition_info.json` in `./Data/empirical_network/(network_name+)_initial_partitions_np_.../`):
+    * Mean modularity
+    * Standard deviation of modularity
+    * Mean number of communities
+    * Standard deviation of number of communities
+    * Mean community sizes, i.e. a list of numbers where each corresponds to the mean number of members in the community label index+1
+    * Standard deviation of community sizes
+    * Degree distribution of the initial network
+  * At each step, data saved (in json file named with `results_...` in `./Data/empirical_network/(network_name+)_s_.../`) are:
+    * Time step
+    * Percentage of number of edges added with respect to the number of edges in the initial network
+    * Mean NMI
+    * Standard deviation of NMIs
+    * Mean Element-Centric Clustering Similarity metric score
+    * Standard Deviation of Element-Centric Clustering Similarity metric scores
+    * Mean modularity
+    * Standard deviation of modularity
+    * Mean number of communities
+    * Standard deviation of number of communities
+    * Mean community sizes
+    * Standard deviation of community sizes
+    * Degree distribution
 
 
 
