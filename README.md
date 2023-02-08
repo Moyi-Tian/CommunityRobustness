@@ -21,7 +21,7 @@ Both the synthetic experiments using the Lancichinetti-Fortunato-Radicch (LFR) b
 
 `python driver.py`
 
-Then follow the popped up inquiries to provide user inputs correspondingly. Hit `enter` each time to proceed. The algorithm will run automatically after all inputs required are provided appropriately.
+Provide user inputs when queried by the Python program. Hit `enter` each time to proceed. The algorithm will run automatically after all required inputs have been provided appropriately.
 
 
 
