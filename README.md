@@ -1,5 +1,7 @@
 # CommunityRobustness
-Studying robustness of community partitions in synthetic and empirical networks under edge addition using community detection algorithms
+This is the code for the experiments described in the paper "Robustness of community structure under edge addition" by Moyi Tian and Pablo Moriano.
+
+In particular, this program computes community similarity between clusters in the initial and perturbed networks over a series of edge addition. The computation can be carried out on either a synthetic network or an empirical temporal network, and the program utilizes community detection algorithms.
 
 
 
