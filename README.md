@@ -1,5 +1,24 @@
 # CommunityRobustness
-This is the code for the experiments described in the paper "Robustness of community structure under edge addition" by Moyi Tian and Pablo Moriano.
+This is the code for the experiments described in the paper "Robustness of community structure under edge addition" by Moyi Tian and Pablo Moriano. 
+
+If you use the script please cite this paper:
+
+```
+@article{PhysRevE.108.054302,
+  title = {Robustness of community structure under edge addition},
+  author = {Tian, Moyi and Moriano, Pablo},
+  journal = {Phys. Rev. E},
+  volume = {108},
+  issue = {5},
+  pages = {054302},
+  numpages = {24},
+  year = {2023},
+  month = {Nov},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.108.054302},
+  url = {https://link.aps.org/doi/10.1103/PhysRevE.108.054302}
+}
+```
 
 In particular, this program computes community similarity between clusters in the initial and perturbed networks over a series of edge addition. The computation can be carried out on either a synthetic network or an empirical temporal network, and the program utilizes community detection algorithms.
 
